@@ -1,3 +1,4 @@
+import { testLib } from 'test-lib';
 import styles from './index.module.css';
 
 export function Index() {
@@ -13,7 +14,7 @@ export function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome test-app 👋
+              Welcome test-app 👋 {testLib({ is: 'something' })}
             </h1>
           </div>
 
